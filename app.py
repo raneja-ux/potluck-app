@@ -82,6 +82,11 @@ st.markdown("""
         #MainMenu {
             display: none;
         }
+        /* Reduce top padding of the main container to move content up */
+        .block-container {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
         .metric-card {
             background-color: white;
             padding: 10px;
