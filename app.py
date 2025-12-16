@@ -204,15 +204,12 @@ else:
     # 3. Desserts
     display_category(col_desserts, "🍰 Desserts", ["🍰 Dessert"])
 
-        # 4. Drinks
+    # 4. Drinks
+    display_category(col_drinks, "🍺 Drinks", ["🍺 Drinks"])
 
-        display_category(col_drinks, "🍺 Drinks", ["🍺 Drinks"])
 
-    
-
-    # --- INPUT FORM ---
-
-    st.markdown("<h4 style='text-align: center; color: white;'>Add your dish below!</h4>", unsafe_allow_html=True)
+# --- INPUT FORM ---
+st.markdown("<h4 style='text-align: center; color: white;'>Add your dish below!</h4>", unsafe_allow_html=True)
 with st.form("potluck_form", clear_on_submit=True, border=False):
     
     CATEGORIES = ["🍗 Mains", "🥗 Sides", "🍰 Dessert", "🍺 Drinks", "🥨 Appetizers"]
