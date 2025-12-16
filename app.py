@@ -45,6 +45,8 @@ st.markdown("""
             .main-header {
                 font-size: 1.2rem !important; /* Further reduced for mobile */
                 margin-bottom: 0px !important;
+                width: 100% !important;
+                display: block !important;
             }
             h2 {
                 font-size: 1.5rem !important;
@@ -135,7 +137,7 @@ def add_entry(name, category, dish, note):
 df = get_data()
 
 # --- HEADER & DASHBOARD (VISUAL HIERARCHY) ---
-st.markdown("<h1 class='main-header'>🎅 Rish & Tina's 🤶<br>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-header'>🎅🏾 Rish & Tina's 🤶🏻<br>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
 st.markdown("<div style='text-align: center; color: #E0E0E0; margin-top: -15px;'>Coordinate who is bringing what so we don't end up with 10 bags of chips!</div>", unsafe_allow_html=True)
 
 st.divider()
