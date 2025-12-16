@@ -44,7 +44,7 @@ st.markdown("""
         /* Mobile Optimization */
         @media only screen and (max-width: 600px) {
             .main-header {
-                font-size: 1.2rem !important; /* h1 size for mobile */
+                font-size: 1.25rem !important; /* h1 size for mobile */
                 margin-bottom: 0px !important;
                 margin-left: 15px !important;
                 width: 100% !important;
