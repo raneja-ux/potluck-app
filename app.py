@@ -26,19 +26,12 @@ st.markdown("""
             text-align: center;
             margin-bottom: -20px;
             text-shadow: 2px 2px 4px #000000;
+            margin-top: 0;
+            margin-bottom: 0;
         }
-        /* Hide Streamlit Header/Top Bar and remove its space */
-        header[data-testid="stHeader"] {
-            display: none;
-        }
-        /* Hide Hamburger Menu and remove its space */
-        #MainMenu {
-            display: none;
-        }
-        /* Reduce top padding of the main container */
-        .block-container {
-            padding-top: 1rem !important;
-            padding-bottom: 1rem !important;
+        h2, h4 {
+            margin-top: 0;
+            margin-bottom: 0;
         }
         /* Mobile Optimization */
         @media only screen and (max-width: 600px) {
