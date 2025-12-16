@@ -45,7 +45,7 @@ st.markdown("""
             .main-header {
                 font-size: 1.2rem !important; /* Further reduced for mobile */
                 margin-bottom: 0px !important;
-                margin-left: 5px !important;
+                margin-left: 10px !important;
                 width: 100% !important;
                 display: block !important;
                 text-align: center !important;
