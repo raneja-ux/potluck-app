@@ -53,6 +53,10 @@ st.markdown("""
             h2 {
                 font-size: 1.2rem !important;
             }
+            
+            h3 {
+                font-size: 1rem !important;
+            }
             h4 {
                 font-size: 1rem !important;
             }
@@ -140,8 +144,8 @@ df = get_data()
 
 # --- HEADER & DASHBOARD (VISUAL HIERARCHY) ---
 st.markdown("<h1 class='main-header'>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
-st.markdown("<h2 class='main-header'>with</h2>", unsafe_allow_html=True)
-st.markdown("<h2 class='main-header'>🎅🏾 Rish & Tina 🤶🏻</h2>", unsafe_allow_html=True)
+st.markdown("<h3 class='main-header'>with</h3>", unsafe_allow_html=True)
+st.markdown("<h3 class='main-header'>🎅🏾 Rish & Tina 🤶🏻</h3>", unsafe_allow_html=True)
 
 # --- CATEGORIZED DISPLAY (4 COLUMNS) ---
 st.markdown("<h2 style='text-align: center; color: white;'>📋 The MENU (so far...)</h2>", unsafe_allow_html=True)
