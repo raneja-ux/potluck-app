@@ -30,8 +30,8 @@ st.markdown("""
         /* Mobile Optimization */
         @media only screen and (max-width: 600px) {
             .main-header {
-                font-size: 2.2rem !important;
-                margin-bottom: 0px !important;
+                font-size: 1.8rem !important; /* Further reduced for mobile */
+                margin_bottom: 0px !important;
             }
             h2 {
                 font-size: 1.5rem !important;
@@ -40,10 +40,8 @@ st.markdown("""
                 font-size: 1rem !important;
             }
         }
-        /* Force standard text to be white */
-        .stMarkdown, .stCaption, p, label, h1, h2, h3, h4, h5, h6 {
-            color: white !important;
-        }
+        /* Removed broad text color rule to prevent conflict with Streamlit's internal UI */
+
         /* Specific override for the white food cards */
         .food-card, .food-card strong, .food-card span {
             color: black !important;
@@ -130,7 +128,7 @@ st.markdown("<div style='text-align: center; color: #E0E0E0; margin-top: -15px;'
 st.divider()
 
 # --- CATEGORIZED DISPLAY (4 COLUMNS) ---
-st.markdown("<h2 style='text-align: center;'>📋 The MENU (so far...)</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: white;'>📋 The MENU (so far...)</h2>", unsafe_allow_html=True)
 
 if df.empty:
     st.info("The list is empty! Be the first to add a dish below.")
@@ -176,8 +174,9 @@ else:
 st.divider()
 
 # --- INPUT FORM ---
-st.markdown("<h4 style='text-align: center;'>Add your dish below!</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: white;'>Add your dish below!</h4>", unsafe_allow_html=True)
 with st.form("potluck_form", clear_on_submit=True, border=False):
+    st.write("<p style='color: white;'>Fill in the details below:</p>", unsafe_allow_html=True)
     
     CATEGORIES = ["🍗 Mains", "🥗 Sides", "🍰 Dessert", "🍺 Drinks", "🥨 Appetizers"]
     f_category = st.selectbox("Category", CATEGORIES)
