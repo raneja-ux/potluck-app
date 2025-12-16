@@ -35,10 +35,15 @@ st.markdown("""
         #MainMenu {
             display: none;
         }
+        /* Reduce top padding of the main container */
+        .block-container {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
         /* Mobile Optimization */
         @media only screen and (max-width: 600px) {
             .main-header {
-                font-size: 1.3rem !important; /* Further reduced for mobile */
+                font-size: 1.2rem !important; /* Further reduced for mobile */
                 margin-bottom: 0px !important;
             }
             h2 {
