@@ -52,7 +52,6 @@ st.markdown("""
                 font-size: 1rem !important;
                 margin-top: 0px !important;
                 margin-bottom: 0px !important;
-                margin-left: 15px !important;
             }
             h4 {
                 font-size: 1rem !important;
@@ -73,19 +72,6 @@ st.markdown("""
         div[data-testid="stFormSubmitButton"] > button:hover {
             background-color: #C0392B !important; /* Darker red on hover */
             border-color: #C0392B !important;
-        }
-        /* Hide Streamlit Header/Top Bar and remove its space */
-        header[data-testid="stHeader"] {
-            display: none;
-        }
-        /* Hide Hamburger Menu and remove its space */
-        #MainMenu {
-            display: none;
-        }
-        /* Reduce top padding of the main container to move content up */
-        .block-container {
-            padding-top: 1rem !important;
-            padding-bottom: 1rem !important;
         }
         .metric-card {
             background-color: white;
@@ -154,7 +140,7 @@ df = get_data()
 
 # --- HEADER & DASHBOARD (VISUAL HIERARCHY) ---
 st.markdown("<h1 class='main-header'>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='color: white; text-align: center;'>with<br>🎅🏾 Rish & Tina 🤶🏻</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color: white; text-align: center;'>with... 🎅🏾 Rish & Tina 🤶🏻</h3>", unsafe_allow_html=True)
 
 # --- CATEGORIZED DISPLAY (4 COLUMNS) ---
 st.markdown("<h2 style='text-align: center; color: white;'>📋 The MENU (so far...)</h2>", unsafe_allow_html=True)
