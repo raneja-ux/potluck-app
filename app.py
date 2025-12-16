@@ -27,19 +27,18 @@ st.markdown("""
             margin-bottom: -20px;
             text-shadow: 2px 2px 4px #000000;
         }
-        /* Hide Streamlit Header/Top Bar */
+        /* Hide Streamlit Header/Top Bar and remove its space */
         header[data-testid="stHeader"] {
-            visibility: hidden;
-            height: 0px;
+            display: none;
         }
-        /* Hide Hamburger Menu */
+        /* Hide Hamburger Menu and remove its space */
         #MainMenu {
-            visibility: hidden;
+            display: none;
         }
         /* Mobile Optimization */
         @media only screen and (max-width: 600px) {
             .main-header {
-                font-size: 1.5rem !important; /* Further reduced for mobile */
+                font-size: 1.3rem !important; /* Further reduced for mobile */
                 margin-bottom: 0px !important;
             }
             h2 {
