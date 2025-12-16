@@ -27,11 +27,20 @@ st.markdown("""
             margin-bottom: -20px;
             text-shadow: 2px 2px 4px #000000;
         }
+        /* Hide Streamlit Header/Top Bar */
+        header[data-testid="stHeader"] {
+            visibility: hidden;
+            height: 0px;
+        }
+        /* Hide Hamburger Menu */
+        #MainMenu {
+            visibility: hidden;
+        }
         /* Mobile Optimization */
         @media only screen and (max-width: 600px) {
             .main-header {
-                font-size: 1.8rem !important; /* Further reduced for mobile */
-                margin_bottom: 0px !important;
+                font-size: 1.5rem !important; /* Further reduced for mobile */
+                margin-bottom: 0px !important;
             }
             h2 {
                 font-size: 1.5rem !important;
