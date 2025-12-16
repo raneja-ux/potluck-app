@@ -74,6 +74,14 @@ st.markdown("""
             background-color: #C0392B !important; /* Darker red on hover */
             border-color: #C0392B !important;
         }
+        /* Hide Streamlit Header/Top Bar and remove its space */
+        header[data-testid="stHeader"] {
+            display: none;
+        }
+        /* Hide Hamburger Menu and remove its space */
+        #MainMenu {
+            display: none;
+        }
         .metric-card {
             background-color: white;
             padding: 10px;
