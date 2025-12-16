@@ -28,12 +28,18 @@ st.markdown("""
             margin-top: 0px;
             text-shadow: 2px 2px 4px #000000;
         }
+        h2 { /* Specific styling for h2 */
+            margin-bottom: 0px !important;
+        }
         h3 { /* General H3 styling */
             font-size: 2rem; /* Default for desktop */
             color: white !important;
             text-align: center;
             margin-top: 0px;
             margin-bottom: 0px;
+        }
+        h4 { /* Specific styling for h4 */
+            margin-top: 0px !important;
         }
         /* Mobile Optimization */
         @media only screen and (max-width: 600px) {
@@ -198,13 +204,15 @@ else:
     # 3. Desserts
     display_category(col_desserts, "🍰 Desserts", ["🍰 Dessert"])
 
-    # 4. Drinks
-    display_category(col_drinks, "🍺 Drinks", ["🍺 Drinks"])
+        # 4. Drinks
 
-st.divider()
+        display_category(col_drinks, "🍺 Drinks", ["🍺 Drinks"])
 
-# --- INPUT FORM ---
-st.markdown("<h4 style='text-align: center; color: white;'> Add your dish below!</h4>", unsafe_allow_html=True)
+    
+
+    # --- INPUT FORM ---
+
+    st.markdown("<h4 style='text-align: center; color: white;'>Add your dish below!</h4>", unsafe_allow_html=True)
 with st.form("potluck_form", clear_on_submit=True, border=False):
     
     CATEGORIES = ["🍗 Mains", "🥗 Sides", "🍰 Dessert", "🍺 Drinks", "🥨 Appetizers"]
