@@ -209,7 +209,7 @@ else:
 
 
 # --- INPUT FORM ---
-st.markdown("<h4 style='text-align: center; color: white;'>Add your dish below!</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: white;'>🌟 Add your dish below!</h4>", unsafe_allow_html=True)
 with st.form("potluck_form", clear_on_submit=True, border=False):
     
     CATEGORIES = ["🍗 Mains", "🥗 Sides", "🍰 Dessert", "🍺 Drinks", "🥨 Appetizers"]
