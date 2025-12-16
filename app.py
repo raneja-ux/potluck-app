@@ -33,6 +33,12 @@ st.markdown("""
                 font-size: 2.2rem !important;
                 margin-bottom: 0px !important;
             }
+            h2 {
+                font-size: 1.5rem !important;
+            }
+            h4 {
+                font-size: 1rem !important;
+            }
         }
         /* Force standard text to be white */
         .stMarkdown, .stCaption, p, label, h1, h2, h3, h4, h5, h6 {
