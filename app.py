@@ -94,6 +94,10 @@ st.markdown("""
             padding-top: 1rem !important;
             padding-bottom: 1rem !important;
         }
+        /* Ensure Streamlit widget labels are white */
+        .stTextInput label, .stSelectbox label, .stTextArea label {
+            color: white !important;
+        }
         .metric-card {
             background-color: white;
             padding: 10px;
