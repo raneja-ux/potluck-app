@@ -138,7 +138,8 @@ def add_entry(name, category, dish, note):
 df = get_data()
 
 # --- HEADER & DASHBOARD (VISUAL HIERARCHY) ---
-st.markdown("<h1 class='main-header'>🎅🏾 Rish & Tina's 🤶🏻<br>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-header'>🎅🏾 Rish & Tina's 🤶🏻</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-header'>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
 
 # --- CATEGORIZED DISPLAY (4 COLUMNS) ---
 st.markdown("<h2 style='text-align: center; color: white;'>📋 The MENU (so far...)</h2>", unsafe_allow_html=True)
@@ -189,9 +190,8 @@ st.divider()
 # --- INPUT FORM ---
 st.markdown("<h4 style='text-align: center; color: white;'>Add your dish below!</h4>", unsafe_allow_html=True)
 with st.form("potluck_form", clear_on_submit=True, border=False):
-    st.write("<p style='color: white;'>Fill in the details below:</p>", unsafe_allow_html=True)
     
-    CATEGORIES = ["🍗 Mains", "🥗 Sides", "🍰 Dessert", "🍺 Drinks", "🥨 Appetizers"]
+    CATEGORIES = ["🍗 Mains", "🥗 Sides & Apps", "🍰 Dessert", "🍺 Drinks", "🥨 Appetizers"]
     f_category = st.selectbox("Category", CATEGORIES)
     
     f_dish = st.text_input("Dish Name", placeholder="e.g., Grandma's Lasagna")
