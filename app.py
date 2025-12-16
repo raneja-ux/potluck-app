@@ -27,6 +27,13 @@ st.markdown("""
             margin-bottom: -20px;
             text-shadow: 2px 2px 4px #000000;
         }
+        /* Mobile Optimization */
+        @media only screen and (max-width: 600px) {
+            .main-header {
+                font-size: 2.2rem !important;
+                margin-bottom: 0px !important;
+            }
+        }
         /* Force standard text to be white */
         .stMarkdown, .stCaption, p, label, h1, h2, h3, h4, h5, h6 {
             color: white !important;
