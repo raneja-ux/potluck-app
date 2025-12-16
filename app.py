@@ -51,7 +51,7 @@ st.markdown("""
                 text-align: center !important;
             }
             h2 {
-                font-size: 1.5rem !important;
+                font-size: 1.2rem !important;
             }
             h4 {
                 font-size: 1rem !important;
@@ -139,7 +139,9 @@ def add_entry(name, category, dish, note):
 df = get_data()
 
 # --- HEADER & DASHBOARD (VISUAL HIERARCHY) ---
-st.markdown("<h1 class='main-header'>🎅🏾 Rish & Tina's 🤶🏻<br>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-header'>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
+st.markdown("<h2 class='main-header'>with</h2>", unsafe_allow_html=True)
+st.markdown("<h2 class='main-header'>🎅🏾 Rish & Tina 🤶🏻</h2>", unsafe_allow_html=True)
 
 # --- CATEGORIZED DISPLAY (4 COLUMNS) ---
 st.markdown("<h2 style='text-align: center; color: white;'>📋 The MENU (so far...)</h2>", unsafe_allow_html=True)
@@ -191,7 +193,7 @@ st.divider()
 st.markdown("<h4 style='text-align: center; color: white;'> Add your dish below!</h4>", unsafe_allow_html=True)
 with st.form("potluck_form", clear_on_submit=True, border=False):
     
-    CATEGORIES = ["🍗 Mains", "🥗 Sides & Apps", "🍰 Dessert", "🍺 Drinks", "🥨 Appetizers"]
+    CATEGORIES = ["🍗 Mains", "🥗 Sides", "🍰 Dessert", "🍺 Drinks", "🥨 Appetizers"]
     f_category = st.selectbox("Category", CATEGORIES)
     
     f_dish = st.text_input("Dish Name", placeholder="e.g., Grandma's Lasagna")
