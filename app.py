@@ -24,19 +24,21 @@ st.markdown("""
             font-weight: 700;
             color: #D4AF37; /* Festive Gold */
             text-align: center;
-            margin-bottom: -20px;
+            margin-bottom: 0px;
+            margin-top: 0px;
             text-shadow: 2px 2px 4px #000000;
-            margin-top: 0;
-            margin-bottom: 0;
         }
-        h2, h4 {
-            margin-top: 0;
-            margin-bottom: 0;
+        h3 { /* General H3 styling */
+            font-size: 2rem; /* Default for desktop */
+            color: white !important;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
         }
         /* Mobile Optimization */
         @media only screen and (max-width: 600px) {
             .main-header {
-                font-size: 1.2rem !important; /* Further reduced for mobile */
+                font-size: 1.2rem !important; /* h1 size for mobile */
                 margin-bottom: 0px !important;
                 margin-left: 10px !important;
                 width: 100% !important;
@@ -46,9 +48,10 @@ st.markdown("""
             h2 {
                 font-size: 1.2rem !important;
             }
-            
-            h3 {
+            h3 { /* H3 size for mobile */
                 font-size: 1rem !important;
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
             }
             h4 {
                 font-size: 1rem !important;
@@ -137,8 +140,8 @@ df = get_data()
 
 # --- HEADER & DASHBOARD (VISUAL HIERARCHY) ---
 st.markdown("<h1 class='main-header'>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
-st.markdown("<h3 class='main-header'>with</h3>", unsafe_allow_html=True)
-st.markdown("<h3 class='main-header'>🎅🏾 Rish & Tina 🤶🏻</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color: white; text-align: center;'>with</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color: white; text-align: center;'>🎅🏾 Rish & Tina 🤶🏻</h3>", unsafe_allow_html=True)
 
 # --- CATEGORIZED DISPLAY (4 COLUMNS) ---
 st.markdown("<h2 style='text-align: center; color: white;'>📋 The MENU (so far...)</h2>", unsafe_allow_html=True)
