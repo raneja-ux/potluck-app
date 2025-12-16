@@ -40,7 +40,7 @@ st.markdown("""
             .main-header {
                 font-size: 1.2rem !important; /* h1 size for mobile */
                 margin-bottom: 0px !important;
-                margin-left: 10px !important;
+                margin-left: 15px !important;
                 width: 100% !important;
                 display: block !important;
                 text-align: center !important;
@@ -52,6 +52,7 @@ st.markdown("""
                 font-size: 1rem !important;
                 margin-top: 0px !important;
                 margin-bottom: 0px !important;
+                margin-left: 15px !important;
             }
             h4 {
                 font-size: 1rem !important;
@@ -140,8 +141,7 @@ df = get_data()
 
 # --- HEADER & DASHBOARD (VISUAL HIERARCHY) ---
 st.markdown("<h1 class='main-header'>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='color: white; text-align: center;'>with</h3>", unsafe_allow_html=True)
-st.markdown("<h3 style='color: white; text-align: center;'>🎅🏾 Rish & Tina 🤶🏻</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color: white; text-align: center;'>with<br>🎅🏾 Rish & Tina 🤶🏻</h3>", unsafe_allow_html=True)
 
 # --- CATEGORIZED DISPLAY (4 COLUMNS) ---
 st.markdown("<h2 style='text-align: center; color: white;'>📋 The MENU (so far...)</h2>", unsafe_allow_html=True)
