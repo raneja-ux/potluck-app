@@ -139,7 +139,7 @@ def add_entry(name, category, dish, note):
 df = get_data()
 
 # --- HEADER & DASHBOARD (VISUAL HIERARCHY) ---
-st.markdown("<h1 class='main-header'> 🎅🏾 Rish & Tina's 🤶🏻<br>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-header'>🎅🏾 Rish & Tina's 🤶🏻<br>🎄 Friendsmas Potluck 2025 🎄</h1>", unsafe_allow_html=True)
 
 # --- CATEGORIZED DISPLAY (4 COLUMNS) ---
 st.markdown("<h2 style='text-align: center; color: white;'>📋 The MENU (so far...)</h2>", unsafe_allow_html=True)
