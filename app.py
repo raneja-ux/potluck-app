@@ -56,6 +56,7 @@ st.markdown("""
             }
             h4 {
                 font-size: 1rem !important;
+                margin-left: 30px !important;
             }
         }
         /* Removed broad text color rule to prevent conflict with Streamlit's internal UI */
