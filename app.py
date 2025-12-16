@@ -52,7 +52,7 @@ st.markdown("""
                 font-size: 1rem !important;
                 margin-top: 0px !important;
                 margin-bottom: 0px !important;
-                margin-left: 25px !important;
+                margin-left: 30px !important;
             }
             h4 {
                 font-size: 1rem !important;
